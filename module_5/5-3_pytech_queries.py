@@ -9,8 +9,6 @@ db = client.pytech
 print(db.list_collection_names())
 
 students = db.students
-#Frodo_student_id = students.insert_one(Frodo).inserted_id
-#print("  Inserted student record Frodo Baggins into the students collection with document_id " + str(Frodo_student_id))
 student_list = students.find({})
 
 for value in student_list:
