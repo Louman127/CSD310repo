@@ -8,8 +8,6 @@ db = client.pytech
 
 print(db.list_collection_names())
 
-#result = db.students.update_one({“student_id”: 1007}, {“$set”: {“last_name”: “Smith”}})
-
 student_database = db.students
 
 found_list = student_database.find({})
