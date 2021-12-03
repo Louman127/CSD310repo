@@ -16,7 +16,7 @@ try:
     db = mysql.connector.connect(**config) # connect to the pysports database    
     # output the connection status 
     print("Database user {} connected to MySQL on host {} with database {}".format(config["user"], config["host"], config["database"]))
-input("\n\nPress any key to continue...\n")
+    input("\n\nPress any key to continue...\n")
 
 except mysql.connector.Error as error:
 
